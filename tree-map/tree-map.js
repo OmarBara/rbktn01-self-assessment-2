@@ -33,5 +33,28 @@ var Tree = function(value) {
   this.children = [];
 };
 
+Tree.prototype.addChild = function(value){
+  this.children.push(new Tree(value))
+ //console.log(this.children)
+}
+Tree.prototype.map = function(fun){
+  var child = this.children
+  
+  // for (var i = 0; i < children.length; i++) {
+  //   console.log(children[i].value)
+  // }
+  // if(child.value){
+  //   console.log(child.value)
+  // }
+
+   
+}
+//var vew = function(child){   
+   console.log(element)
+      child.forEach(function(element){
+         console.log(element)
+         //vew(element)
+    })
+      
 
 
